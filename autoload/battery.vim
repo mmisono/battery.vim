@@ -3,8 +3,8 @@
 " Author: mfumi
 " Email: m.fumi760@gmail.com
 " Description: Display battery infomation
-" Last Change: 16-07-2010 
-" Version: 0.10
+" Last Change: 18-07-2010 
+" Version: 0.11
 
 
 " ----------------------------------------------------------------------------------------------------
@@ -136,7 +136,7 @@ function! battery#battery(format)
 				let format = substitute(format,s:info_format[i],info[i],"g")
 			endif
 		endfor
-		echo format
+		return format
 	endif
 endfunction
 

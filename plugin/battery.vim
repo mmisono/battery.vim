@@ -3,8 +3,8 @@
 " Author: mfumi
 " Email: m.fumi760@gmail.com
 " Description: Display battery infomation
-" Last Change: 16-07-2010 
-" Version: 0.10
+" Last Change: 18-07-2010 
+" Version: 0.11
 
 if exists('g:loaded_battery_vim')
 	finish
@@ -45,7 +45,7 @@ endif
 call s:set_default('g:battery_load_critical',10)
 call s:set_default('g:battery_load_low',25)
 
-command! -nargs=0 Battery call battery#battery(g:battery_status_format)
+command! -nargs=0 Battery echo battery#battery(g:battery_status_format)
 
 " ----------------------------------------------------------------------------------------------------
 
